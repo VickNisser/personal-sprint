@@ -1,0 +1,10 @@
+default:
+- 'watch'
+- 'sass'
+
+minify:
+- 'cssmin'
+- 'uglify'
+
+jscheck:
+- 'jshint'
