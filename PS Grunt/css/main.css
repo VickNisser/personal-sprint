@@ -463,3 +463,8 @@ th {
     margin: 0.5%; }
   .form__button {
     margin: 0.5%; }
+
+.footer {
+  background-color: #333;
+  height: 100%;
+  width: 100%; }

@@ -44,7 +44,6 @@
     margin-left: 4%;
     margin-right: 4%;
 
-
     &__header{
         font-size: 22px;
         text-align: center;
@@ -123,4 +122,10 @@
     &__button{
         margin: 0.5%;
     }
+}
+
+.#{$module-footer}{
+    background-color: $black;
+    height: 100%;
+    width: 100%;
 }
