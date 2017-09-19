@@ -1,7 +1,126 @@
-@import 'modules/_vars.scss';
+@import 'mixins/_shapes.scss';
+@import 'mixins/_flex.scss';
+@import 'mixins/_block.scss';
 
-.body{
-    background-color: $black;
-    padding: 500px;
+.#{$module-menu}{
+    background-color: $grey;
+    @include flex(row,nowrap,center);
+}
+
+.#{$module-container}{
+
+    @include flex(row,nowrap,center);
+    text-align: center;
     
+    &__element{
+        @include block($black);
+    }
+
+    &__element--darkgrey{
+        @include block($darkgrey);
+    }
+
+    &__element--grey{
+        @include block($grey);
+    }
+
+    &__element-text{
+        font-size: 19px;
+        color: $white;
+        margin: 3%;
+    }
+
+    &__element-shape{
+        @include hexagon();
+        margin-left: 22%;
+    }
+}
+
+.#{$module-intro}{
+
+    background-color: $white;
+    @include flex(row,wrap,space-between);
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+
+    &__header{
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__paragraphs{
+        font-size: 17px;  
+        width: 50%;
+        height: 50%;
+        
+    }
+
+    &__list{
+        margin-right: 39%;
+    }
+}
+
+.#{$module-showcase}{
+
+    background-color: $grey;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+    &__header{
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+    &__right{
+        @include flex(column,nowrap,space-between);
+    }
+
+    &__preview{
+        border: 1px solid $black;
+        border-radius: 5%;
+        align-self: flex-end;
+        margin: 1%;
+    }
+}
+
+.#{$module-form}{
+
+    background-color: $white;
+    height: 100%;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    @include flex(row,wrap,flex-end);
+
+    &__header{
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__text-input{
+        width: 48%;
+        height: 9%;
+        background-color: $grey;
+        margin: 0.5%;
+    }
+
+    &__txtarea{
+        width: 48%;
+        resize: none;
+        background-color: $grey;
+        margin: 0.5%;
+    }
+
+    &__checkbox{
+        margin: 0.5%;
+    }
+
+    &__button{
+        margin: 0.5%;
+    }
 }

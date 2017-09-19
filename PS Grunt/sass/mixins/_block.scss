@@ -1,0 +1,6 @@
+@mixin block($color){
+    background-color: $color;
+    height: 100%;
+    width: 33.33%;
+    padding: 10%;
+}

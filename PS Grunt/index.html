@@ -6,39 +6,57 @@
     <title>Wireframe</title>
 </head>
 <body>
-    <nav class="menu">
-        <ul class="menu__list">   
-            <li class="menu__link"><a href="">Link</a></li>
-            <li class="menu__link"><a href="">Link</a></li>
-            <li class="menu__link"><a href="">Link</a></li>
-            <li class="menu__link"><a href="">Link</a></li>
-        </ul>
+    <nav class="menu">   
+            <a href="" class="menu__link">-Link</a>
+            <a href="" class="menu__link">-Link</a>
+            <a href="" class="menu__link">-Link</a>
+            <a href="" class="menu__link">-Link</a>
     </nav>
     <section class="container">
-        <section class="container__element"></section>
-        <section class="container__element"></section>
-        <section class="container__element"></section>
+        <section class="container__element">
+            <section class="container__element-shape"></section>
+            <p class="container__element-text">Lorum ipsum dolor sit</p>
+        </section>
+        <section class="container__element--darkgrey">
+            <section class="container__element-shape"></section>
+            <p class="container__element-text">Lorum ipsum dolor sit</p>
+        </section>
+        <section class="container__element--grey">
+            <section class="container__element-shape"></section>
+            <p class="container__element-text">Lorum ipsum dolor sit</p>
+        </section>
     </section>
     <section class="introduction">
-        <p class="introduction__paragraphs"></p>
+        <p class="introduction__header">Introduction</p>
+        <p class="introduction__paragraphs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis in, quibusdam dolorem ratione ullam sint. Incidunt error dolores dolor molestias illum, architecto ratione autem quo commodi amet, similique nam?</p>
+        <p class="introduction__paragraphs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis in, quibusdam dolorem ratione ullam sint. Incidunt error dolores dolor molestias illum, architecto ratione autem quo commodi amet, similique nam?</p>
+        <p class="introduction__paragraphs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis in, quibusdam dolorem ratione ullam sint. Incidunt error dolores dolor molestias illum, architecto ratione autem quo commodi amet, similique nam?</p>
         <ul class="introduction__list">
-            <li class="introduction__list__item"></li>
-            <li class="introduction__list__item"></li>
-            <li class="introduction__list__item"></li>
-            <li class="introduction__list__item"></li>
+            <li class="introduction__list-item">a word</li>
+            <li class="introduction__list-item">another word</li>
+            <li class="introduction__list-item">more</li>
+            <li class="introduction__list-item">words</li>
         </ul>
     </section>
-    <section class="slideshow">
-
+    <section class="showcase">
+        <p class="showcase__header">Showcase Head</p>
+        <section class="showcase__right">
+            <img class="showcase__preview" src="images/location.jpg" alt="couldn't find what you were looking for" width="7%" height="7%">
+            <img class="showcase__preview" src="images/location.jpg" alt="couldn't find what you were looking for" width="7%" height="7%">
+            <img class="showcase__preview" src="images/location.jpg" alt="couldn't find what you were looking for" width="7%" height="7%">
+            <img class="showcase__preview" src="images/location.jpg" alt="couldn't find what you were looking for" width="7%" height="7%">
+        </section>            
     </section>
     <section class="form">
-            <inout class="form__input" type="text" name="firstname">
-            <input class="form__input" type="text" name="lastname">
-            <input class="form__input" type="text" name="adress">
-            <input class="form__input" type="text" name="email">
-            <input class="form__input" type="text" name="?????">
-            <textarea class="form__input" rows="10"  cols="10"></textarea>
-            <input class="form__input" type="submit" value="Submit">
+            <p class="form__header">Form Head</p>
+                <input class="form__text-input" type="text" name="firstname">
+                <input class="form__text-input" type="text" name="lastname">
+                <input class="form__text-input" type="text" name="adress">
+                <input class="form__text-input" type="text" name="email">
+                <textarea class="form__txtarea" rows="9"  cols="24" name="message"></textarea>
+                <input class="form__text-input" type="text" name="?????">
+                <input class="form__checkbox" type="checkbox" name="terms" id="terms"><label for="terms" class="form__checkbox-label"> I read  <a href="">terms</a>  yes</label>
+                <input class="form__button" type="submit" value="Submit">
     </section>
     <footer>
     </footer>

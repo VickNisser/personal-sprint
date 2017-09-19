@@ -356,7 +356,110 @@ td,
 th {
   padding: 0; }
 
-.body {
-  background-color: #333;
-  padding: 500px; 
-}
+.menu {
+  background-color: #C8C8C8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center; }
+  .container__element {
+    background-color: #333;
+    height: 100%;
+    width: 33.33%;
+    padding: 10%; }
+  .container__element--darkgrey {
+    background-color: #A3A1A1;
+    height: 100%;
+    width: 33.33%;
+    padding: 10%; }
+  .container__element--grey {
+    background-color: #C8C8C8;
+    height: 100%;
+    width: 33.33%;
+    padding: 10%; }
+  .container__element-text {
+    font-size: 19px;
+    color: #fff;
+    margin: 3%; }
+  .container__element-shape {
+    background-color: #fff;
+    height: 110px;
+    width: 100px;
+    clip-path: polygon(50% 0%, 100% 25%, 70% 37%, 70% 39%, 100% 27%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin-left: 22%; }
+
+.introduction {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 4%; }
+  .introduction__header {
+    font-size: 22px;
+    text-align: center;
+    width: 100%; }
+  .introduction__paragraphs {
+    font-size: 17px;
+    width: 50%;
+    height: 50%; }
+  .introduction__list {
+    margin-right: 39%; }
+
+.showcase {
+  background-color: #C8C8C8;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 4%; }
+  .showcase__header {
+    font-size: 22px;
+    text-align: center;
+    width: 100%; }
+  .showcase__right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+  .showcase__preview {
+    border: 1px solid #333;
+    border-radius: 5%;
+    align-self: flex-end;
+    margin: 1%; }
+
+.form {
+  background-color: #fff;
+  height: 100%;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+  .form__header {
+    font-size: 22px;
+    text-align: center;
+    width: 100%; }
+  .form__text-input {
+    width: 48%;
+    height: 9%;
+    background-color: #C8C8C8;
+    margin: 0.5%; }
+  .form__txtarea {
+    width: 48%;
+    resize: none;
+    background-color: #C8C8C8;
+    margin: 0.5%; }
+  .form__checkbox {
+    margin: 0.5%; }
+  .form__button {
+    margin: 0.5%; }
