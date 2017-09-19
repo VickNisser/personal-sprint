@@ -3,7 +3,7 @@
 module.exports = {
     dist:{
         files:{
-            './css/main.css':'./sass/style.scss',
+            './css/main.css':'./sass/main.scss',
         },
     }
 };
