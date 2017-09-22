@@ -1,6 +1,7 @@
 .#{$navigation}{
     background-color: $grey;
     @include flex(row,nowrap,center);
+
 }
 
 .#{$highlighted-products}{
@@ -87,10 +88,10 @@
 
     background-color: $white;
     height: 100%;
-    width: 90%;
+    width: auto;
     margin-left: 4%;
     margin-right: 4%;
-    @include flex(row,wrap,flex-end);
+    @include flex(row,wrap,center);
 
     &__header{
         font-size: 22px;
@@ -99,27 +100,30 @@
     }
 
     &__text-input{
-        width: 48%;
+        width: 47%;
         height: 8%;
         background-color: $grey;
-        margin: 0.5%;
+        margin: 0.4%;
+        
     }
 
     &__txtarea{
-        width: 47.7%;
+        width: 46.5%;
         resize: none;
         background-color: $grey;
-        margin: 0.5%;
+        margin: 0.4%;
     }
 
     &__checkbox{
         margin: 0.5%;
         align-self: flex-end;
+        margin-top: -10%;
     }
 
     &__button{
         margin: 0.5%;
         align-self: flex-end;
+        margin-top: -10%;
     }
 }
 
