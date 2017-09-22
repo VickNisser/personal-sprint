@@ -462,13 +462,15 @@ th {
     background-color: #C8C8C8;
     margin: 0.4%; }
   .form__checkbox {
-    margin: 0.5%;
-    align-self: flex-end;
-    margin-top: -10%; }
+    align-self: flex-start; }
   .form__button {
     margin: 0.5%;
-    align-self: flex-end;
-    margin-top: -10%; }
+    align-self: flex-start;
+    background-color: #333;
+    width: 15%;
+    height: 50px;
+    color: #fff;
+    margin-left: 20%; }
 
 .footer {
   background-color: #333;
