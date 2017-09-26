@@ -19,7 +19,7 @@ function addNodes(){
 	//using after and an ID
 	let inputField = document.createElement('input');
 	inputField.setAttribute('type','text');
-	inputField.setAttribute('value', 'i was added using DOM');
+	inputField.setAttribute('placeholder', 'i was added using DOM');
 	inputField.classList.add("form__text-input");
 	txtarea.after(inputField);
 
