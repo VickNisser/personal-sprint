@@ -23,14 +23,13 @@ function addNodes(){
 	inputField.classList.add("form__text-input");
 	txtarea.after(inputField);
 
-	//using appendChild, the classname and the position in the collection of nodes with that name
+	//using prepend, the classname and the position in the collection of nodes with that name
 	let footerText = document.createElement('p');
 	footerText.setAttribute('class', 'footer_text');
 	footerText.setAttribute('style', 'color:pink');
 	footerText.innerHTML = 'Some footer text using DOM';
 	let nodeDestination = document.getElementsByClassName('footer')[0];
-	nodeDestination.appendChild(footerText);
-
+	nodeDestination.prepend(footerText);
 }
 
 changeNode("highlighted-products__view-text", 1);
