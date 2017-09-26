@@ -1,20 +1,20 @@
 @mixin hexagon($color, $height, $width){
-    background-color: $color;
-    height: $height;
-    width: $width;
-    clip-path: polygon(50% 0%, 100% 25%, 70% 37%, 70% 39%, 100% 27%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	background-color: $color;
+	height: $height;
+	width: $width;
+	clip-path: polygon(50% 0%, 100% 25%, 70% 37%, 70% 39%, 100% 27%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 @mixin flex($direction, $wrap, $justify){
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    justify-content: $justify;
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	justify-content: $justify;
 }
 
 @mixin block($color, $height, $width, $padding){
-    background-color: $color;
-    height: $height;
-    width: $width;
-    padding: $padding;
+	background-color: $color;
+	height: $height;
+	width: $width;
+	padding: $padding;
 }

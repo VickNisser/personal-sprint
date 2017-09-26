@@ -1,138 +1,131 @@
 .#{$navigation}{
-    background-color: $grey;
-    @include flex(row,nowrap,center);
-
+	background-color: $grey;
+	@include flex(row,nowrap,center);
 }
 
 .#{$highlighted-products}{
 
-    @include flex(row,nowrap,center);
-    text-align: center;
-    
-    &__view{
-        @include block($black, 100%, 33.33%, 10%);
-    }
+	@include flex(row,nowrap,center);
+	text-align: center;
+	
+	&__view{
+		@include block($black, auto, 33.33%, 10%);
+	}
 
-    &__view--darkgrey{
-        @include block($darkgrey, 100%, 33.33%, 10%);
-    }
+	&__view--darkgrey{
+		@include block($darkgrey, auto, 33.33%, 10%);
+	}
 
-    &__view--grey{
-        @include block($grey,  100%, 33.33%, 10%);
-    }
+	&__view--grey{
+		@include block($grey,  auto, 33.33%, 10%);
+	}
 
-    &__view-text{
-        font-size: 20px;
-        color: $white;
-        margin: 3.5%;
-    }
+	&__view-text{
+		font-size: 20px;
+		color: $white;
+		margin: 3.5%;
+	}
 
-    &__view-icon{
-        @include hexagon($white, 110px, 100px);
-        margin-left: 22.2%;
-    }
+	&__view-icon{
+		@include hexagon($white, 110px, 100px);
+		margin-left: 22.2%;
+	}
 }
 
 .#{$intro}{
 
-    background-color: $white;
-    @include flex(row,wrap,space-between);
-    width: 90%;
-    margin-left: 4%;
-    margin-right: 4%;
+	background-color: $white;
+	@include flex(row,wrap,space-between);
+	width: 90%;
+	margin-left: 4%;
+	margin-right: 4%;
 
-    &__header{
-        font-size: 22px;
-        text-align: center;
-        width: 100%;
-    }
+	&__header{
+		font-size: 22px;
+		text-align: center;
+		width: 100%;
+	}
 
-    &__paragraphs{
-        font-size: 17px;  
-        width: 50%;
-        height: 50%;
-    }
-
-    &__list{
-        margin-right: 39%;
-    }
+	&__paragraphs{
+		font-size: 17px;  
+		width: 50%;
+		height: 50%;
+	}
 }
 
 .#{$showcase}{
 
-    background-color: $grey;
-    width: 90%;
-    margin-left: 4%;
-    margin-right: 4%;
+	background-color: $grey;
+	width: 90%;
+	margin-left: 4%;
+	margin-right: 4%;
 
-    &__header{
-        font-size: 22px;
-        text-align: center;
-        width: 100%;
-    }
-    &__right{
-        @include flex(column,nowrap,space-between);
-    }
+	&__header{
+		font-size: 22px;
+		text-align: center;
+		width: 100%;
+	}
+	&__right{
+		@include flex(column,nowrap,space-between);
+	}
 
-    &__preview{
-        border: 1px solid $black;
-        border-radius: 5%;
-        align-self: flex-end;
-        margin: 1%;
-        height: 7%;
-        width: 7%;
-    }
+	&__preview{
+		border: 1px solid $black;
+		border-radius: 5%;
+		align-self: flex-end;
+		margin: 1%;
+		height: 7%;
+		width: 7%;
+	}
 }
 
 .#{$form}{
 
-    background-color: $white;
-    height: 100%;
-    width: auto;
-    margin-left: 4%;
-    margin-right: 4%;
-    @include flex(row,wrap,center);
+	background-color: $white;
+	height: 100%;
+	width: auto;
+	margin-left: 4%;
+	margin-right: 4%;
+	@include flex(row,wrap,center);
 
-    &__header{
-        font-size: 22px;
-        text-align: center;
-        width: 100%;
-    }
+	&__header{
+		font-size: 22px;
+		text-align: center;
+		width: 100%;
+	}
 
-    &__text-input{
-        width: 47%;
-        height: 8%;
-        background-color: $grey;
-        margin: 0.4%;
-    }
+	&__text-input{
+		width: 48.2%;
+		height: 8%;
+		background-color: $grey;
+		margin: 0.4%;
+	}
 
-    &__txtarea{
-        width: 46.5%;
-        resize: none;
-        background-color: $grey;
-        margin: 0.4%;
-    }
+	&__txtarea{
+		width: 48%;
+		resize: none;
+		background-color: $grey;
+		margin: 0.4%;
+	}
 
-    &__checkbox{
-        height: auto;
-        width: auto;
-        font-size: 17px;
-        font-weight: bold;
-    }
+	&__checkbox{
+		font-size: 17px;
+		font-weight: bold;
+	}
 
-    &__button{
-        margin: 0.5%;
-        align-self: flex-start;
-        background-color: $black;
-        width: 15%;
-        height: 50px;
-        color: $white;
-        margin-left: 22%;
-    }
+	&__button{
+		margin: 0.5%;
+		align-self: flex-start;
+		background-color: $black;
+		width: 15%;
+		height: 50px;
+		color: $white;
+		margin-left: 60%;
+	}
 }
 
 .#{$footer}{
-    background-color: $black;
-    height: 100%;
-    width: 100%;
+	background-color: $black;
+	height: 100%;
+	width: 100%;
 }
