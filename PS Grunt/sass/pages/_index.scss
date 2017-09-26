@@ -8,7 +8,7 @@
 	@include flex(row,nowrap,center);
 	text-align: center;
 	
-	&__view{
+	&__view--black{
 		@include block($black, auto, 33.33%, 10%);
 	}
 

@@ -32,5 +32,11 @@ function addNodes(){
 	nodeDestination.prepend(footerText);
 }
 
+//confirm user wants to leave the page
+window.onbeforeunload = function confirmExit(){
+	return "Please Stay :'(";
+} 
+
+
 changeNode("highlighted-products__view-text", 1);
 addNodes();
