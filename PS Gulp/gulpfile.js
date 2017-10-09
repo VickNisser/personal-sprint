@@ -8,9 +8,11 @@ function getTask(task) {
 gulp.task('concat', getTask('concat'));
 gulp.task('sass', getTask('sass'));
 gulp.task('lint', getTask('lint'));
+gulp.task('babel', ['concat'],getTask('babel'));
 
-gulp.task('default', ['lint', 'concat', 'sass'], function() {
-	gulp.watch('javascript/*.js', ['lint'])
+gulp.task('default', ['lint', 'concat', 'sass','babel'], function() {
+	gulp.watch('javascript/*.js', ['lint']);
 	gulp.watch('javascript/*.js', ['concat']);
+	gulp.watch('javascript/main.js', ['babel']);
 	gulp.watch('sass/**/*.scss', ['sass']);
 });
