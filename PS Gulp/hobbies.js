@@ -1,0 +1,6 @@
+var hobbies = [
+{"hobby" : "birdwatching"},
+{"hobby" : "collecting stamps"},
+{"hobby" : "cricket"},
+{"hobby" : "soccer"}
+]

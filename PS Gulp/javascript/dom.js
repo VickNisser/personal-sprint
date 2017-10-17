@@ -32,10 +32,23 @@ function addNodes() {
 	nodeDestination.prepend(footerText);
 }
 
+//read data from the json file and display it in a list
+function readJson() {
+	var hobbyList = JSON.parse(hobbies);
+
+	var list = document.createElement('ul');
+	showcase.after(list);
+	for(i = 0; i < 3; i++) {
+		var hobbyListItem = document.createElement('li');
+		hobbyListItem.innerHTML = hobbyList[i].hobby;
+		list.appendChild(hobbyListItem);
+	}
+}
+
 //confirm user wants to leave the page
 window.onbeforeunload = function confirmExit() {
 	return "Please Stay :'(";
 }
 
-changeNode("highlighted-products__view-text", 1);
 addNodes();
+readJson();

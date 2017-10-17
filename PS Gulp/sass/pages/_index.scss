@@ -20,19 +20,29 @@
 		@include block($grey,  auto, 33.33%, 10%);
 	}
 
-	&__view-text{
+	&__view-text {
 		font-size: 20px;
 		color: $white;
 		margin: 3.5%;
 	}
 
-	&__view-icon{
+	&__view-icon {
 		@include hexagon($white, 110px, 100px);
 		margin-left: 22.2%;
 	}
+
+	&__view-icon--middle {
+		margin-left: 5%;
+		background-color: white;
+		height: 200px;
+		width: 200px;
+		clip-path: circle(50% at 50% 50%);
+		border: 5px dotted black;
+		border-radius: 110px;
+	}
 }
 
-.#{$intro}{
+.#{$intro} {
 
 	background-color: $white;
 	@include flex(row,wrap,space-between);
@@ -40,36 +50,36 @@
 	margin-left: 4%;
 	margin-right: 4%;
 
-	&__header{
+	&__header {
 		font-size: 22px;
 		text-align: center;
 		width: 100%;
 	}
 
-	&__paragraphs{
+	&__paragraphs {
 		font-size: 17px;  
 		width: 50%;
 		height: 50%;
 	}
 }
 
-.#{$showcase}{
+.#{$showcase} {
 
 	background-color: $grey;
 	width: 90%;
 	margin-left: 4%;
 	margin-right: 4%;
 
-	&__header{
+	&__header {
 		font-size: 22px;
 		text-align: center;
 		width: 100%;
 	}
-	&__right{
+	&__right {
 		@include flex(column,nowrap,space-between);
 	}
 
-	&__preview{
+	&__preview {
 		border: 1px solid $black;
 		border-radius: 5%;
 		align-self: flex-end;
@@ -79,7 +89,7 @@
 	}
 }
 
-.#{$form}{
+.#{$form} {
 
 	background-color: $white;
 	height: 100%;
@@ -88,32 +98,32 @@
 	margin-right: 4%;
 	@include flex(row,wrap,center);
 
-	&__header{
+	&__header {
 		font-size: 22px;
 		text-align: center;
 		width: 100%;
 	}
 
-	&__text-input{
+	&__text-input {
 		width: 48.2%;
 		height: 8%;
 		background-color: $grey;
 		margin: 0.4%;
 	}
 
-	&__txtarea{
+	&__txtarea {
 		width: 48%;
 		resize: none;
 		background-color: $grey;
 		margin: 0.4%;
 	}
 
-	&__checkbox{
+	&__checkbox {
 		font-size: 17px;
 		font-weight: bold;
 	}
 
-	&__button{
+	&__button {
 		margin: 0.5%;
 		align-self: flex-start;
 		background-color: $black;
@@ -124,8 +134,25 @@
 	}
 }
 
-.#{$footer}{
+.#{$footer} {
 	background-color: $black;
 	height: 100%;
 	width: 100%;
+}
+
+.clock{
+	margin-left: 5%;
+	background-color: white;
+	height: 200px;
+	width: 200px;
+	clip-path: circle(50% at 50% 50%);
+	border: 5px dotted black;
+	border-radius: 110px;
+	animation-name: clock;
+	animation-duration: 10s;
+}
+
+@keyframes clock {
+	from{background-color:white}
+	to{background-color:red}
 }

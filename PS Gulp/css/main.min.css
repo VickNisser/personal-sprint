@@ -394,6 +394,14 @@ th {
     width: 100px;
     clip-path: polygon(50% 0%, 100% 25%, 70% 37%, 70% 39%, 100% 27%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     margin-left: 22.2%; }
+  .highlighted-products__view-icon--middle {
+    margin-left: 5%;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    clip-path: circle(50% at 50% 50%);
+    border: 5px dotted black;
+    border-radius: 110px; }
 
 .introduction {
   background-color: #fff;
@@ -475,3 +483,20 @@ th {
   background-color: #333;
   height: 100%;
   width: 100%; }
+
+.clock {
+  margin-left: 5%;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  clip-path: circle(50% at 50% 50%);
+  border: 5px dotted black;
+  border-radius: 110px;
+  animation-name: clock;
+  animation-duration: 10s; }
+
+@keyframes clock {
+  from {
+    background-color: white; }
+  to {
+    background-color: red; } }
