@@ -34,15 +34,22 @@ function addNodes() {
 
 //read data from the json file and display it in a list
 function readJson() {
-	var hobbyList = JSON.parse(hobbies);
+	var request = new XMLHttpRequest();
+	
+	request.open('GET', 'hobbies.json', true);
 
-	var list = document.createElement('ul');
-	showcase.after(list);
-	for(i = 0; i < 3; i++) {
-		var hobbyListItem = document.createElement('li');
-		hobbyListItem.innerHTML = hobbyList[i].hobby;
-		list.appendChild(hobbyListItem);
+	request.onload = function () {
+		var hobbies = JSON.parse(this.response);
+
+		var list = document.createElement('ul');
+		showcase.after(list);
+		for(i = 0; i < 3; i++) {
+			var hobbyListItem = document.createElement('li');
+			hobbyListItem.innerHTML = hobbies[i].hobby;
+			list.appendChild(hobbyListItem);
+		}
 	}
+	request.send();
 }
 
 //confirm user wants to leave the page

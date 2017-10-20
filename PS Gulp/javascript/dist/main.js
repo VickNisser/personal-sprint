@@ -59,15 +59,22 @@ function addNodes() {
 
 //read data from the json file and display it in a list
 function readJson() {
-	var hobbyList = JSON.parse(hobbies);
+	var request = new XMLHttpRequest();
+	
+	request.open('GET', 'hobbies.json', true);
 
-	var list = document.createElement('ul');
-	showcase.after(list);
-	for(i = 0; i < 3; i++) {
-		var hobbyListItem = document.createElement('li');
-		hobbyListItem.innerHTML = hobbyList[i].hobby;
-		list.appendChild(hobbyListItem);
+	request.onload = function () {
+		var hobbies = JSON.parse(this.response);
+
+		var list = document.createElement('ul');
+		showcase.after(list);
+		for(i = 0; i < 3; i++) {
+			var hobbyListItem = document.createElement('li');
+			hobbyListItem.innerHTML = hobbies[i].hobby;
+			list.appendChild(hobbyListItem);
+		}
 	}
+	request.send();
 }
 
 //confirm user wants to leave the page
@@ -126,6 +133,29 @@ function reverseNumber(number) {
 console.log(reverseNumber(25683));
 oddsAndEvens();
 largestNumber();
+'use strict';
+
+const button = document.getElementById('button');
+
+function trim() {
+	var trim = document.getElementsByClassName('introduction__paragraphs--readmore');
+	trim[0].setAttribute('style','display:none');
+	trim[1].setAttribute('style','display:none');
+	button.setAttribute('onclick','display()');
+	button.innerHTML = "Read more";
+}
+
+function display() {
+	var display = document.getElementsByClassName('introduction__paragraphs--readmore');
+	display[0].setAttribute('style','display:flex');
+	display[1].setAttribute('style','display:flex');
+	var button = document.getElementById('button');
+	button.setAttribute('onclick','trim()');
+	button.innerHTML = "Read less";
+}
+
+trim();
+
 'use strict';
 
 function questions() {
