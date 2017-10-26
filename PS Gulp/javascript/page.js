@@ -19,4 +19,20 @@ function display() {
 	button.innerHTML = "Read less";
 }
 
+const slideImage = document.createElement('img');
+slideImage.className = 'image--hidden';
+slideImage.setAttribute('src','images/location.jpg')
+footer.prepend(slideImage);
+
+function scroll() {
+
+	if (document.documentElement.scrollTop > 1100) {
+		slideImage.className = 'image--shown';
+	}
+	else {
+		slideImage.className = 'image--hidden';
+	}
+}
+
 trim();
+window.onscroll = function() {scroll()};

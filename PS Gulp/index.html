@@ -20,7 +20,14 @@
 			<p class="highlighted-products__view-text">Lorum ipsum dolor sit</p>
 		</section>
 		<section class="highlighted-products__view highlighted-products__view--darkgrey">
-			<section class="highlighted-products__view-icon--middle"></section>
+			<section class="analogue-clock">
+				<svg width="150" height="150">
+					<circle id="face" cx="80" cy="80" r="65"/>
+					<line id="hour-hand" x1="80" y1="80" x2="70" y2="38" />
+					<line id="minute-hand" x1="80" y1="80" x2="70" y2="28" />
+					
+				</svg>
+			</section>
 			<p id="clock" class="highlighted-products__view-text">Lorum ipsum dolor sit</p>
 		</section>
 		<section class="highlighted-products__view highlighted-products__view--grey">
@@ -28,7 +35,7 @@
 			<p class="highlighted-products__view-text">Lorum ipsum dolor sit</p>
 		</section>
 	</section>
-	<section class="introduction">
+	<section class="introduction" id="intro">
 		<h2 class="introduction__header">Introduction</h2>
 		<p class="introduction__paragraphs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis in, quibusdam dolorem ratione ullam sint. Incidunt error dolores dolor molestias illum, architecto ratione autem quo commodi amet, similique nam?</p>
 		<p class="introduction__paragraphs--readmore">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis in, quibusdam dolorem ratione ullam sint. Incidunt error dolores dolor molestias illum, architecto ratione autem quo commodi amet, similique nam?</p>
@@ -61,7 +68,7 @@
 			<input class="form__checkbox" type="checkbox" name="terms" id="terms" form="form"><label for="terms" class="form__checkbox"> I read  <a href="">terms</a>  yes</label>
 			<input class="form__button" type="submit" value="Submit" form="form">
 	</section>
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<p class="footer__text">This is a footer</p>
 	</footer>
 	<script type="text/javascript" src="javascript/hobbies.json"></script>

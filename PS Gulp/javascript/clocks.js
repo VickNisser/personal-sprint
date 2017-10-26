@@ -22,4 +22,7 @@ function timer(t) {
 	
 }
 
+function analogue() {
+	
+}
 var clock = setInterval(function(){timer(new Date("Jan 1, 2018 00:00:00").getTime())}, 1000);

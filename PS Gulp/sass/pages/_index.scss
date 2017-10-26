@@ -1,3 +1,32 @@
+#face {
+	stroke:black;
+	fill:white;
+}
+
+#hour-hand {
+	stroke:black;
+	stroke-width: 2px;
+}
+
+#minute-hand {
+	stroke:black;
+	stroke-width: 1px;
+}
+
+.image--hidden {
+	display: none;
+}
+
+.image--shown {
+	display: block;
+	position: relative;
+	height: 150px;
+	width: 150px;
+	animation-name: slide-image;
+	animation-duration: 2s;
+	left: 100px;
+}
+
 .#{$navigation}{
 	background-color: $grey;
 	@include flex(row,nowrap,center);
@@ -31,7 +60,7 @@
 		margin-left: 22.2%;
 	}
 
-	&__view-icon--middle {
+	/*&__view-icon--middle {
 		margin-left: 5%;
 		background-color: white;
 		height: 200px;
@@ -39,7 +68,7 @@
 		clip-path: circle(50% at 50% 50%);
 		border: 5px dotted black;
 		border-radius: 110px;
-	}
+	}*/
 }
 
 .#{$intro} {
@@ -140,7 +169,7 @@
 	width: 100%;
 }
 
-.clock{
+/*.clock{
 	margin-left: 5%;
 	background-color: white;
 	height: 200px;
@@ -150,9 +179,17 @@
 	border-radius: 110px;
 	animation-name: clock;
 	animation-duration: 10s;
-}
+}*/
 
 @keyframes clock {
 	from{background-color:white}
 	to{background-color:red}
+}
+
+@keyframes slide-image {
+	0% {left:0px;}
+	25% {left:25px;}
+	50% {left:50px;}
+	75% {left:75px;}
+	100% {left:100px;}
 }

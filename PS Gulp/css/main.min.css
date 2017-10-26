@@ -356,6 +356,30 @@ td,
 th {
   padding: 0; }
 
+#face {
+  stroke: black;
+  fill: white; }
+
+#hour-hand {
+  stroke: black;
+  stroke-width: 2px; }
+
+#minute-hand {
+  stroke: black;
+  stroke-width: 1px; }
+
+.image--hidden {
+  display: none; }
+
+.image--shown {
+  display: block;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  animation-name: slide-image;
+  animation-duration: 2s;
+  left: 100px; }
+
 .navigation {
   background-color: #C8C8C8;
   display: flex;
@@ -368,7 +392,16 @@ th {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  /*&__view-icon--middle {
+		margin-left: 5%;
+		background-color: white;
+		height: 200px;
+		width: 200px;
+		clip-path: circle(50% at 50% 50%);
+		border: 5px dotted black;
+		border-radius: 110px;
+	}*/ }
   .highlighted-products__view--black {
     background-color: #333;
     height: auto;
@@ -394,14 +427,6 @@ th {
     width: 100px;
     clip-path: polygon(50% 0%, 100% 25%, 70% 37%, 70% 39%, 100% 27%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     margin-left: 22.2%; }
-  .highlighted-products__view-icon--middle {
-    margin-left: 5%;
-    background-color: white;
-    height: 200px;
-    width: 200px;
-    clip-path: circle(50% at 50% 50%);
-    border: 5px dotted black;
-    border-radius: 110px; }
 
 .introduction {
   background-color: #fff;
@@ -484,19 +509,31 @@ th {
   height: 100%;
   width: 100%; }
 
-.clock {
-  margin-left: 5%;
-  background-color: white;
-  height: 200px;
-  width: 200px;
-  clip-path: circle(50% at 50% 50%);
-  border: 5px dotted black;
-  border-radius: 110px;
-  animation-name: clock;
-  animation-duration: 10s; }
-
+/*.clock{
+	margin-left: 5%;
+	background-color: white;
+	height: 200px;
+	width: 200px;
+	clip-path: circle(50% at 50% 50%);
+	border: 5px dotted black;
+	border-radius: 110px;
+	animation-name: clock;
+	animation-duration: 10s;
+}*/
 @keyframes clock {
   from {
     background-color: white; }
   to {
     background-color: red; } }
+
+@keyframes slide-image {
+  0% {
+    left: 0px; }
+  25% {
+    left: 25px; }
+  50% {
+    left: 50px; }
+  75% {
+    left: 75px; }
+  100% {
+    left: 100px; } }

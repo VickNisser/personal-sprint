@@ -22,6 +22,9 @@ function timer(t) {
 	
 }
 
+function analogue() {
+	
+}
 var clock = setInterval(function(){timer(new Date("Jan 1, 2018 00:00:00").getTime())}, 1000);
 'use strict';
 
@@ -50,7 +53,7 @@ function addNodes() {
 
 	//using prepend, the classname and the position in the collection of nodes with that name
 	var footerText = document.createElement('p');
-	footerText.setAttribute('class', 'footer_text');
+	footerText.setAttribute('class', 'footer__text');
 	footerText.setAttribute('style', 'color:pink');
 	footerText.innerHTML = 'Some footer text using DOM';
 	var nodeDestination = document.getElementsByClassName('footer')[0];
@@ -65,6 +68,7 @@ function readJson() {
 
 	request.onload = function () {
 		var hobbies = JSON.parse(this.response);
+		var i;
 
 		var list = document.createElement('ul');
 		showcase.after(list);
@@ -82,8 +86,8 @@ window.onbeforeunload = function confirmExit() {
 	return "Please Stay :'(";
 }
 
-addNodes();
 readJson();
+addNodes();
 
 'use strict';
 
@@ -154,7 +158,23 @@ function display() {
 	button.innerHTML = "Read less";
 }
 
+const slideImage = document.createElement('img');
+slideImage.className = 'image--hidden';
+slideImage.setAttribute('src','images/location.jpg')
+footer.prepend(slideImage);
+
+function scroll() {
+
+	if (document.documentElement.scrollTop > 1100) {
+		slideImage.className = 'image--shown';
+	}
+	else {
+		slideImage.className = 'image--hidden';
+	}
+}
+
 trim();
+window.onscroll = function() {scroll()};
 
 'use strict';
 
