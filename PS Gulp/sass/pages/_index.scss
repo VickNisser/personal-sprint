@@ -4,13 +4,18 @@
 }
 
 #hour-hand {
-	stroke:black;
+	stroke: blue;
 	stroke-width: 2px;
 }
 
 #minute-hand {
-	stroke:black;
+	stroke: black;
 	stroke-width: 1px;
+}
+
+#second-hand {
+	stroke: red;
+	stroke-width: 0.5px;
 }
 
 .image--hidden {

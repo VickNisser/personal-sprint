@@ -22,10 +22,21 @@ function timer(t) {
 	
 }
 
-function analogue() {
+function analog() {
+	var time = new Date().getTime();
+	var hour = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minute = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+	var second = Math.floor((time % (1000 * 60)) / 1000);
+
+	var hourHand = document.getElementById('hour-hand');
+	var minuteHand = document.getElementById('minute-hand');
+	var secondHand = document.getElementById('second-hand');
+
 	
 }
+
 var clock = setInterval(function(){timer(new Date("Jan 1, 2018 00:00:00").getTime())}, 1000);
+var analogClock = setInterval(function(){analog()}, 1000);
 'use strict';
 
 //change the contents of a node by classname and their position in the returned collection of nodes
